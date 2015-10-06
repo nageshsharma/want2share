@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">People Share</string>
+
+    <!--<string name="dummy_section_text">Section %1d is just a dummy section.</string>-->
+    <string name="dummy_section_text">%1d</string>
+
+    <string name="demo_external_activity">Import Image</string>
+    <string name="image_activity">Click to Add</string>
+    <string name="demo_collection">Navigate Object</string>
+    <string name="action_settings">Settings</string>
+    <string name="list_activity">Transactions</string>
+    <string name="TranType">Transaction Type</string>
+
+    <string-array name="TranTypeList">
+        <item>Birthday Party</item>
+        <item>Lunch</item>
+        <item>Badminton</item>
+        <item>Cricket</item>
+        <item>Lend</item>
+    </string-array>
+
+</resources>

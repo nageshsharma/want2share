@@ -1,0 +1,114 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+<!--
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+android:visibility="invisible
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:baselineAligned="false">
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Transaction"
+        android:id="@+id/lblNewItem"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff090909"
+        android:layout_above="@+id/TranSpinner"
+        android:layout_alignEnd="@+id/txtTransactionName"
+        android:textSize="23dp"
+        android:visibility="invisible"/>
+
+        <Spinner
+            android:id="@+id/TranSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/TranTypeList"
+            android:prompt="@string/TranType"
+            android:background="@color/button_material_light"
+            android:dropDownSelector="@color/button_material_light"
+            android:layout_alignBottom="@+id/txtTransactionName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="65dp"
+            android:visibility="invisible"/>
+        <EditText
+            android:layout_width="245dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtTransactionName"
+            android:layout_marginTop="140dp"
+            android:hint=""
+            android:layout_gravity="center_horizontal|top"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:selectAllOnFocus="false"
+            android:background="@color/material_blue_grey_800"
+            android:layout_weight="0.38"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:textCursorDrawable="@null"
+            android:visibility="invisible"/>
+
+        <Button android:id="@+id/image_activity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/image_activity"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/txtResult"
+            android:layout_width="317dp"
+            android:layout_height="118dp"
+            android:gravity="bottom"
+            android:textSize="20sp"
+            android:padding="32dp"
+            android:text=""
+            android:layout_marginTop="46dp"
+            android:layout_below="@+id/image_activity"
+            android:layout_alignParentStart="true" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResult"
+
+        android:id="@+id/textClock"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/TranSpinner" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResult"
+        android:layout_alignStart="@+id/txtResult"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txtTransactionName" />
+
+
+    <!--   </LinearLayout>
+
+
+
+   </FrameLayout>-->
+
+</RelativeLayout>
